@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- TODO: Put your HTML code in here -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <br>
+          <form class="d-flex">
+            <!-- <input type="text" id="city-input" placeholder="Enter city"> -->
+            <select id="city-input" class="select2"></select>
+            <input type="submit" value="Get the weather" class="btn btn-primary">
+          </form>
+          <br>
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h1>Weather in <span id="city"></span></h1>
+              <h3 id="date" class="gray-text"></h3>
+              <div id="weather">
+                <p id="description"></p>
+                <div class="d-flex">
+                  <img src="" alt="Weather Icon" id="icon">
+                  <h2 id="temperature"></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="" class="btn btn-success" id="current-location">Get current weather in your city</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
